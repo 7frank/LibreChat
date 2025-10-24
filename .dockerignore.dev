@@ -1,0 +1,53 @@
+# Development Docker ignore file
+# Less restrictive than production - we need source files for development
+
+# Version control
+**/.git
+**/.github
+
+# IDE and editor files
+**/.vscode
+**/.idea
+**/.DS_Store
+**/.editorconfig
+
+# Build artifacts (we'll build inside container)
+**/dist
+**/build
+client/dist
+api/dist
+
+# Dependencies (we'll install inside container)
+**/node_modules
+
+# Data and volumes
+data-node
+meili_data*
+pgdata2
+uploads
+logs
+
+# Environment and config (will be mounted separately)
+.env.local
+.env.*.local
+
+# Documentation
+docs
+*.md
+!DEV.md
+
+# Test and CI
+**/.circleci
+e2e/playwright-report
+e2e/test-results
+coverage
+
+# Temporary files
+*.log
+*.tmp
+*.cache
+.cache
+
+# OS files
+Thumbs.db
+.DS_Store
