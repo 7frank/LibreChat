@@ -211,7 +211,9 @@ const Nav = memo(
                     id="chat-history-nav"
                     aria-label={localize('com_ui_chat_history')}
                     className="flex h-full flex-col px-2 pb-3.5 md:px-3"
+                    style={{backgroundColor: "#f2994a"}}
                   >
+                    <img className="py-8 px-2" src="https://www.jambit.com/site/templates/images/jambit-logo.svg"></img>
                     <div className="flex flex-1 flex-col" ref={outerContainerRef}>
                       <MemoNewChat
                         subHeaders={subHeaders}
