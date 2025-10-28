@@ -99,7 +99,7 @@ const MessageEndpointIcon: React.FC<IconProps> = (props) => {
 
   const agentsIcon = {
     icon: iconURL ? (
-      <div className="relative flex h-6 w-6 items-center justify-center">
+      <div className="relative flex h-12 w-12 items-center justify-center">
         <div
           title={agentName}
           style={{
